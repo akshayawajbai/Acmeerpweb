@@ -4,6 +4,7 @@ import { FaCheckCircle } from "react-icons/fa";
 import bg from "../assets/img/bg/price_bg_1.jpg";
 import { RiCloseCircleFill } from "react-icons/ri";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import "../css/Plan.css";
 
 const containerVariants = {
@@ -77,9 +78,9 @@ const Plan = () => {
                     Free Online Support*
                   </li>
                 </ul>
-                <button className="btn btn-primary btn-get-plan">
+                <Link to="/contact" className="btn btn-primary btn-get-plan">
                   Get Your Free Plan
-                </button>
+                </Link>
               </div>
             </motion.div>
 
@@ -128,9 +129,9 @@ const Plan = () => {
                     Free Online Support*
                   </li>
                 </ul>
-                <button className="btn btn-primary btn-get-plan">
+                 <Link to="/contact"  className="btn btn-primary btn-get-plan">
                   Get Your Free Plan
-                </button>
+                </Link>
               </div>
             </motion.div>
 
@@ -174,9 +175,9 @@ const Plan = () => {
                     Free Online Support*
                   </li>
                 </ul>
-                <button className="btn btn-primary btn-get-plan">
+                  <Link to="/contact"  className="btn btn-primary btn-get-plan">
                   Get Your Free Plan
-                </button>
+                </Link>
               </div>
             </motion.div>
           </motion.div>

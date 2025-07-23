@@ -22,7 +22,7 @@ For a full list of packages and their descriptions, please see [`acme_erp/README
    ```
 2. Install dependencies:
    ```sh
-   npm install
+  npm install react-simple-maps --legacy-peer-deps
    ```
 3. Start the development server:
    ```sh

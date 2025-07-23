@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 
 import org1 from "../assets/img/client/friars.jpg";
 import org2 from "../assets/img/client/jac.jpg";
-import org3 from "../assets/img/client/charity.jpg";
+import org3 from "../assets/img/client/Archdiocese.jpg";
 import org4 from "../assets/img/client/chengelpet.jpg";
 import org5 from "../assets/img/client/claretian.jpg";
 import org6 from "../assets/img/client/congregation-of sister.jpg";
@@ -58,7 +58,7 @@ const About = () => {
   const organizations = [
     { name: "Sisters of St. Anne Madras", image: org1 },
     { name: "Sisters of Charity", image: org2 },
-    { name: "Roman Catholic Diocese of Chingleput", image: org3 },
+    { name: "Hyderabad Archdiocese Educational Society", image: org3 },
     { name: "Claretian Missionaries", image: org4 },
     { name: "Congregation of Sisters of St. Anne, Tiruchirappalli", image: org5 },
     { name: "Congregation of the Sisters of St. Anne's, Bangalore", image: org6 }
@@ -222,7 +222,7 @@ const About = () => {
 
       {/* Partner Organizations Marquee */}
       <div className="marquee-section">
-        <h2 className="marquee-title">Our Partner Organizations</h2>
+        <h2 className="marquee-title">Our Customers</h2>
         <div className="marquee-container">
           <div className="marquee">
             {[...organizations, ...organizations, ...organizations].map((org, index) => (
