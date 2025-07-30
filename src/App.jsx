@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter  as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 import Header from './components/Header.jsx';
@@ -7,8 +7,8 @@ import Hero from './components/Hero.jsx';
 import Navbar from './components/Navbar.jsx';
 import Data from './components/Data.jsx';
 import Cards from './components/Cards.jsx';
-import About from './components/About .jsx';
-import BlogPost from './components/blogpost.jsx';
+import About from './components/About.jsx';
+import BlogPost from './components/BlogPost.jsx';
 import Accounting from './page/Accounting.jsx';
 import Plan from './components/Plan.jsx';
 import Question from './components/Question.jsx';
@@ -16,18 +16,19 @@ import Review from './components/Review.jsx';
 import Streamlines from './components/Streamlines.jsx';
 import Finance from './page/Finance.jsx';
 import Finance2 from './components/Finance2.jsx';
-import Contact from './components/contact.jsx';
+import Contact from './components/Contact.jsx';
 import ScrollToTop from './components/ScrollToTop.jsx';
 import ScrollTrackerCircle from './ScrollTracker.jsx';
-import Footer from './components/Footer .jsx';
+import Footer from './components/Footer.jsx';
 import Tearmsconditions from './page/Tearmsconditions.jsx';
-import Privacy from './page/privacy.jsx';
-import Functional from './components/Functional .jsx';
+import Privacy from './page/Privacy.jsx';
+import Functional from './components/Functional.jsx';
 import CustomCursor from './components/CustomCursor.jsx';
 import Chatbot from './components/Chatbot.jsx';
-import MapIndia from '../src/components/MapIndia.jsx';
+import MapIndia from './components/MapIndia.jsx';
 import MapDashboard from './components/MapDashboard.jsx';
 import AntiInspect from './components/AntiInspect.jsx';
+
 
 
 const fadeInUp = {
