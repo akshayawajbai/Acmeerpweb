@@ -14,7 +14,7 @@ import Plan from './components/Plan.jsx';
 import Question from './components/Question.jsx';
 import Review from './components/Review.jsx';
 import Streamlines from './components/Streamlines.jsx';
-import Finance from './page/Finance.jsx';
+// import Finance from './page/Finance.jsx';
 import Finance2 from './components/Finance2.jsx';
 import Contact from './components/Contact.jsx';
 import ScrollToTop from './components/ScrollToTop.jsx';
@@ -123,7 +123,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/accounting" element={<Accounting />} />
-        <Route path="/finance" element={<Finance />} />
+        {/* <Route path="/finance" element={<Finance />} /> */}
         <Route path="/finance2" element={<Finance2 />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/Termscondition" element={<Tearmsconditions />} />
