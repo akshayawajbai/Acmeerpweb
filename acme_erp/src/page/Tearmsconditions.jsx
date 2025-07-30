@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import '../css/Tearmsconditions.css';
 
 const TermsConditions = () => {
   const [showScrollTop, setShowScrollTop] = useState(false);
@@ -26,138 +27,134 @@ const TermsConditions = () => {
 
   const styles = {
     body: {
-      fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
-      lineHeight: '1.6',
-      color: '#333',
-      backgroundColor: '#f8f9fa'
+      background: '#f5f7fa',
+      padding: '40px 0',
+      fontFamily: "'Segoe UI', sans-serif",
     },
     termsContainer: {
-      background: 'white',
-      borderRadius: '10px',
-      boxShadow: '0 0 20px rgba(0,0,0,0.1)',
-      margin: '30px 0',
-      overflow: 'hidden'
+      background: '#ffffff',
+      borderRadius: '12px',
+      padding: '40px 30px',
+      boxShadow: '0 8px 20px rgba(0, 0, 0, 0.06)',
+      marginTop: '40px',
+      marginBottom: '60px',
     },
     termsHeader: {
-      background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-      color: 'white',
-      padding: '40px 0',
-      textAlign: 'center'
+      textAlign: 'center',
+      marginBottom: '30px',
     },
     headerTitle: {
       fontSize: '2.5rem',
-      fontWeight: '600',
-      marginBottom: '10px'
+      color: '#1E5E7E',
+      fontWeight: '700',
+      marginBottom: '10px',
     },
     headerSubtitle: {
       fontSize: '1.1rem',
-      opacity: '0.9',
-      marginBottom: '0'
-    },
-    termsContent: {
-      padding: '40px'
-    },
-    sectionTitle: {
-      color: '#667eea',
-      fontSize: '1.5rem',
-      fontWeight: '600',
-      marginTop: '30px',
-      marginBottom: '15px',
-      paddingBottom: '8px',
-      borderBottom: '2px solid #e9ecef'
-    },
-    sectionTitleFirst: {
-      marginTop: '0'
-    },
-    sectionContent: {
-      marginBottom: '25px',
-      textAlign: 'justify',
-      color: '#555'
-    },
-    noticeSection: {
-      background: '#fff3cd',
-      border: '1px solid #ffeaa7',
-      borderRadius: '8px',
-      padding: '20px',
-      marginBottom: '30px'
-    },
-    noticeSectionTitle: {
-      color: '#856404',
-      marginBottom: '15px',
-      fontWeight: '600'
-    },
-    contactInfo: {
-      background: '#e3f2fd',
-      borderLeft: '4px solid #2196f3',
-      padding: '20px',
-      borderRadius: '0 8px 8px 0',
-      marginTop: '20px'
-    },
-    contactInfoTitle: {
-      color: '#1976d2',
-      marginBottom: '15px'
-    },
-    emailLink: {
-      color: '#667eea',
-      textDecoration: 'none',
-      fontWeight: '500'
-    },
-    highlightText: {
-      backgroundColor: '#fff3e0',
-      padding: '2px 6px',
-      borderRadius: '4px',
-      fontWeight: '500'
-    },
-    companyInfo: {
-      background: '#f8f9fa',
-      borderRadius: '8px',
-      padding: '20px',
-      margin: '20px 0'
+      color: '#555',
     },
     toc: {
-      background: '#f1f3f4',
-      borderRadius: '8px',
+      backgroundColor: '#f9fbfc',
       padding: '20px',
-      marginBottom: '30px'
+      borderLeft: '4px solid #1E5E7E',
+      borderRadius: '8px',
+      marginBottom: '40px',
     },
     tocTitle: {
-      color: '#333',
-      marginBottom: '15px'
+      fontSize: '1.2rem',
+      fontWeight: 'bold',
+      color: '#1E5E7E',
+      marginBottom: '10px',
     },
     tocList: {
-      listStyle: 'none',
-      paddingLeft: '0'
+      listStyleType: 'none',
+      padding: 0,
+      margin: 0,
     },
     tocItem: {
-      padding: '5px 0',
-      borderBottom: '1px solid #e0e0e0'
+      marginBottom: '8px',
     },
     tocItemLast: {
-      borderBottom: 'none'
+      marginBottom: 0,
     },
     tocLink: {
-      color: '#667eea',
       textDecoration: 'none',
-      fontWeight: '500',
-      cursor: 'pointer'
+      color: '#1E5E7E',
+      transition: 'color 0.2s ease-in-out',
+    },
+    noticeSection: {
+      background: '#fff4e5',
+      borderLeft: '5px solid #ffa726',
+      padding: '20px',
+      borderRadius: '6px',
+      marginBottom: '20px',
+    },
+    noticeSectionTitle: {
+      fontWeight: 'bold',
+      color: '#e65100',
+      fontSize: '1.2rem',
+      marginBottom: '10px',
+    },
+    companyInfo: {
+      background: '#eef6f9',
+      padding: '15px 20px',
+      borderLeft: '4px solid #1E5E7E',
+      borderRadius: '6px',
+      marginBottom: '20px',
+    },
+    highlightText: {
+      fontWeight: 'bold',
+      color: '#0f5a7a',
+    },
+    sectionTitle: {
+      fontSize: '1.5rem',
+      color: '#1E5E7E',
+      fontWeight: 'bold',
+      marginTop: '40px',
+      marginBottom: '15px',
+    },
+    sectionTitleFirst: {
+      marginTop: 0,
+    },
+    sectionContent: {
+      fontSize: '1rem',
+      color: '#444',
+      lineHeight: '1.7',
+      marginBottom: '20px',
+    },
+    contactInfo: {
+      background: '#f1f8e9',
+      padding: '20px',
+      borderLeft: '5px solid #689f38',
+      borderRadius: '6px',
+      marginTop: '40px',
+    },
+    contactInfoTitle: {
+      fontSize: '1.2rem',
+      fontWeight: 'bold',
+      color: '#33691e',
+      marginBottom: '10px',
+    },
+    emailLink: {
+      color: '#1E5E7E',
+      textDecoration: 'none',
     },
     scrollTopButton: {
       position: 'fixed',
       bottom: '20px',
-      right: '20px',
-      zIndex: '1000',
-      borderRadius: '50%',
-      width: '50px',
-      height: '50px',
-      border: 'none',
-      backgroundColor: '#667eea',
+      right: '25px',
+      backgroundColor: '#1E5E7E',
       color: 'white',
+      border: 'none',
+      borderRadius: '50%',
+      width: '40px',
+      height: '40px',
+      fontSize: '18px',
       cursor: 'pointer',
-      boxShadow: '0 2px 10px rgba(0,0,0,0.3)',
-      display: showScrollTop ? 'flex' : 'none',
-      alignItems: 'center',
-      justifyContent: 'center'
-    }
+      boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
+      transition: 'transform 0.3s ease',
+      zIndex: 999,
+    },
   };
 
   return (
@@ -166,16 +163,11 @@ const TermsConditions = () => {
         <div className="row justify-content-center">
           <div className="col-lg-10 col-xl-8">
             <div style={styles.termsContainer}>
-              {/* Header */}
               <div style={styles.termsHeader}>
-                <h1 style={styles.headerTitle}>
-                  📄 Terms & Conditions
-                </h1>
-                <p style={styles.headerSubtitle}>
-                  Please read these terms carefully before using our services
-                </p>
+                <h1 style={styles.headerTitle}>📄 Terms & Conditions</h1>
+                <p style={styles.headerSubtitle}>Please read these terms carefully before using our services</p>
               </div>
-              
+
               {/* Content */}
               <div style={styles.termsContent}>
                 {/* Table of Contents */}
@@ -196,12 +188,12 @@ const TermsConditions = () => {
                       { id: 'governing-law', text: 'Governing Law' },
                       { id: 'contact', text: 'Contact Us' }
                     ].map((item, index, array) => (
-                      <li 
-                        key={item.id} 
-                        style={index === array.length - 1 ? {...styles.tocItem, ...styles.tocItemLast} : styles.tocItem}
+                      <li
+                        key={item.id}
+                        style={index === array.length - 1 ? { ...styles.tocItem, ...styles.tocItemLast } : styles.tocItem}
                       >
-                        <a 
-                          href={`#${item.id}`} 
+                        <a
+                          href={`#${item.id}`}
                           style={styles.tocLink}
                           onClick={(e) => scrollToSection(e, item.id)}
                         >
@@ -224,7 +216,7 @@ const TermsConditions = () => {
                 </div>
 
                 {/* Use of The Site and our Services */}
-                <h3 style={{...styles.sectionTitle, ...styles.sectionTitleFirst}} id="use-site-services">
+                <h3 style={{ ...styles.sectionTitle, ...styles.sectionTitleFirst }} id="use-site-services">
                   🌐 Use of The Site and our Services
                 </h3>
                 <div style={styles.sectionContent}>
@@ -245,7 +237,7 @@ const TermsConditions = () => {
                 </h3>
                 <div style={styles.sectionContent}>
                   <p>There is no charge imposed by us for accessing the Site but you are liable to pay the cost of the communications link you used to visit the Site. The content of the pages on the website are for general information and use only. It is subject to change without notice. Neither Boscosoft nor any third party provides any warranty or guarantee to the accuracy, timeliness, performance, completeness or suitability of the information and materials found or offered on the website for any particular purpose. Boscosoft shall not be in any way liable for any inaccuracy, error, defect, or fault related to the information and materials found or offered on the website.</p>
-                  
+
                   <p>Use of any information or materials on the website is entirely at the User's own risk, for which Boscosoft shall not be liable. It shall be the User's own responsibility to ensure that any product, service, or information available through the website meets the User's requirements. Unauthorized use of the website may give rise to a claim for damages and/or it will be a criminal offense punishable under the applicable penal law.</p>
                 </div>
 
@@ -271,7 +263,7 @@ const TermsConditions = () => {
                 </h3>
                 <div style={styles.sectionContent}>
                   <p>All rights related to the Site design, text, graphics, and other content, the selection, and arrangements are licensed to Boscosoft. The content of this website is protected by international copyright laws and other intellectual property rights. All company names and logos mentioned on this website are the trademarks, service marks, or trading names of their respective owners, including us. You may not modify, copy, reproduce, republish, upload, post, transmit or distribute by any means or in any manner, any material or information on the website or downloaded from this website including but not limited to text, graphics, video, messages, code and/or software without our prior written consent, except where expressly invited to do so.</p>
-                  
+
                   <p>Boscosoft respects the intellectual property of others. If you believe that your work has been copied in a way that constitutes copyright infringement, please contact us by e-mail at <a href="mailto:binfo@boscosofttech.com" style={styles.emailLink}>binfo@boscosofttech.com</a></p>
                 </div>
 

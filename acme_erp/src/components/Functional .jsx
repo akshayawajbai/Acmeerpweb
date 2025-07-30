@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import '../css/Functional.css'; 
+import '../css/Functional.css';
 import {
   FaChartBar, FaMoneyBillWave, FaClipboardList, FaNetworkWired, FaMobileAlt,
   FaGem, FaGlobe, FaLink, FaChartLine, FaComments, FaBriefcase,
@@ -25,10 +25,29 @@ const features = [
 ];
 
 // Animation variants for the icon
-const iconRotateVariants = {
-  rest: { rotate: 0, transition: { duration: 0.6, ease: "easeInOut" } },
-  hover: { rotate: 360, transition: { duration: 0.6, ease: "easeInOut" } }
+// Pulsing effect (continuous)
+const iconPulseVariants = {
+  animate: {
+    scale: [1, 1.12, 1],
+    transition: {
+      duration: 2,
+      repeat: Infinity,
+      ease: "easeInOut"
+    }
+  }
 };
+
+// Rotate on hover only
+const iconRotateVariants = {
+  hover: {
+    rotate: 360,
+    transition: {
+      duration: 0.6,
+      ease: "easeInOut"
+    }
+  }
+};
+
 
 const Functional = () => {
   return (
@@ -54,9 +73,17 @@ const Functional = () => {
                   <motion.div
                     className="acme-icon"
                     variants={iconRotateVariants}
+                    whileHover="hover"
+                    animate="animate"
                   >
-                    <Icon />
+                    <motion.div
+                      variants={iconPulseVariants}
+                      animate="animate"
+                    >
+                      <Icon />
+                    </motion.div>
                   </motion.div>
+
                   <h3 className="acme-title-text">{title}</h3>
                   <p className="acme-desc">{description}</p>
                 </motion.div>

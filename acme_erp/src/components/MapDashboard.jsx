@@ -1437,7 +1437,7 @@ const MapDashboard = () => {
     >
       <div className="map-grid">
         <div className={`map-container ${activeMap}-map`}>
-          {/* <h2 className="map-heading">{activeMap === "india" ? "India Map" : "World Map"}</h2> */}
+           <h2 className="map-heading">{activeMap === "india" ? "India " : "World "}</h2> 
           <svg
             key={activeMap}  // Important: force remount between maps
             className="map-svg"
